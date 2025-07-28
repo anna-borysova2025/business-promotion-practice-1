@@ -4,48 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        <img src="./images/logo.svg" alt="logo" width="40" height="36" />Product
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="">Resources </a></li>
-        </ul>
-      </nav>
+    <!-- header -->
 
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li>
-            <button type="button">Get started</button>
+    <header class="header">
+      <div class="container heaer-container">
+        <a class="header-logo logo" href="./index.html">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            width="40"
+            height="36"
+          />Product
+        </a>
+
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link current" href="./index.html">Product</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-btn-list">
+          <li class="header-btn-item">
+            <button class="header-btn" type="button">Sign In</button>
           </li>
-          <li>
-            <button type="button">Watch the Video</button>
+          <li class="header-btn-item">
+            <button class="header-btn" type="button">Sign Up</button>
           </li>
         </ul>
-        <img
-          src="./images/hero-img.svg"
-          alt="hero-img"
-          width="610"
-          height="555"
-        />
+      </div>
+    </header>
+
+    <!--hero section-->
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div>
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-list">
+              <li class="hero-list-item">
+                <button class="hero-start-btn" type="button">
+                  Get started
+                </button>
+              </li>
+              <li class="hero-list-item">
+                <button class="hero-video-btn" type="button">
+                  Watch the Video
+                </button>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/hero-img.svg"
+            alt="hero-img"
+            width="610"
+            height="555"
+          />
+        </div>
       </section>
+
       <!--Product  was Built Specifically for You-->
       <section>
         <h2>Product was Built Specifically for You</h2>
@@ -94,9 +141,10 @@
         <button type="button">SIGN UP NOW</button>
       </section>
 
-      <!--benefits-->
+      <!--services-->
+
       <section>
-        <h2>benefits</h2>
+        <h2>Services</h2>
         <ul>
           <li>
             <p>Effortless Validation for</p>
@@ -106,64 +154,76 @@
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
-            <h4>Accessory makers</h4>
-            <p>
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
-            </p>
-            <h4>Alterationists</h4>
-            <p>
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
-            </li>
+            <ul>
+              <li>
+                <h4>Accessory makers</h4>
+                <p>
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <li>
+                <h4>Alterationists</h4>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
             <img
               src="./images/management-img.svg"
               alt="books and papers"
               width="540"
               height="500"
             />
-          
+          </li>
+
           <li>
-            <p>Easier decision making for</p>
-            <h3>Customer Support</h3>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person
-            </p>
-            <img
-              src="./images/icon.svg"
-              alt="logo yellow"
-              width="35"
-              height="35"
-            />
-            <p>Never worry about overpaying for your energy again.</p>
-            <img
-              src="./images/icon (1).svg"
-              alt="logo red"
-              width="35"
-              height="35"
-            />
-            <p>
-              We will only switch you to energy companies that we trust and will
-              treat you right
-            </p>
-            <img
-              src="./images/icon (2).svg"
-              alt="logo blue"
-              width="35"
-              height="35"
-            />
-            <p>We track the markets daily and know where the savings are.</p>
-              </li>
             <img
               src="./images/support-img.svg"
               alt="notebook"
               width="540"
               height="500"
             />
-    
+            <p>Easier decision making for</p>
+            <h3>Customer Support</h3>
+            <p>
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <ul>
+              <li>
+                <img
+                  src="./images/icon.svg"
+                  alt="logo yellow"
+                  width="35"
+                  height="35"
+                />
+                Never worry about overpaying for your energy again.
+              </li>
+              <li>
+                <img
+                  src="./images/icon (1).svg"
+                  alt="logo red"
+                  width="35"
+                  height="35"
+                />
+                We will only switch you to energy companies that we trust and
+                will treat you right
+              </li>
+              <li>
+                <img
+                  src="./images/icon (2).svg"
+                  alt="logo blue"
+                  width="35"
+                  height="35"
+                />
+                We track the markets daily and know where the savings are.
+              </li>
+            </ul>
+          </li>
+
           <li>
             <p>Optimisation for</p>
             <h3>Collaborative</h3>
@@ -172,19 +232,29 @@
               the past three decades, women still face a double standard when it
               comes to their behavior.
             </p>
-            <h4>Accessory makers</h4>
-            <p>
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
-            </p>
-            <h4>Alterationists</h4>
-            <p>
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
-            </li>
-            <img src="./images/collaboration-img.svg" alt="collaboration-img" width="540" height="500">
-        
+            <ul>
+              <li>
+                <h4>Accessory makers</h4>
+                <p>
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <li>
+                <h4>Alterationists</h4>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
+            <img
+              src="./images/collaboration-img.svg"
+              alt="diskets"
+              width="540"
+              height="500"
+            />
+          </li>
         </ul>
       </section>
     </main>
